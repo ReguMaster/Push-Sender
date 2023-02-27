@@ -9,6 +9,15 @@
 * Google Firebase 를 사용하여 비용 없음
 * 로그 테이블 저장을 통해 월별 통계 기능
 
+발송 방법
+=============
+
+### 푸시 메세지 발송
+```sql
+INSERT INTO dbo.Tbl_Push_Data (TOKEN, TITLE, BODY, MODULE_ID)
+	VALUES ('', 'TITLE', 'BODY', 1)
+```
+
 라이선스
 =============
 [MIT 라이선스](https://ko.wikipedia.org/wiki/MIT_%ED%97%88%EA%B0%80%EC%84%9C)를 사용합니다.
